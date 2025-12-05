@@ -9,23 +9,37 @@
 body {
     -webkit-font-smoothing: antialiased;
     background-color: white;
+    background-color: #F5F5F7;
 }
 
 main {
-    max-width: 1020px;
     margin: 0 auto;
 }
 
-nav {
-    max-height: 45px;
+header {
     width: 100%;
+}
+
+nav {
+    max-width: 980px;
+    height: 43px;
+    margin: 0 auto;
     display: flex;
+    align-items: center; 
     justify-content: space-between;
+    background-color: transparent;
 }
 
 nav > li {
     list-style: none;
-    display: flex;
     font-size: 12px;
     font-family: "Inter Tight", sans-serif;
+    margin: 0;
+    color: #4D4D4E;
 }
+
+.logo {
+    width: 19px;
+    height: 19px;
+}
+
