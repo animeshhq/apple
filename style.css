@@ -10,3 +10,7 @@ body {
     background-color: white;
     max-width: 1020px;
 }
+
+nav {
+    max-height: 45px;
+}
