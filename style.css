@@ -10,7 +10,6 @@
 body {
     -webkit-font-smoothing: antialiased;
     background-color: white;
-    background-color: #F5F5F7;
 }
 
 main {
@@ -60,7 +59,7 @@ nav > li {
 }
 
 .cashback{
-    width: 95%;
+    width: 100%;
     height: 45px;
     font-size: 14px;
     font-family: "Inter", sans-serif;
@@ -69,14 +68,86 @@ nav > li {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F5F5F7;
 }
 
 .hero {
+    position: relative;
     max-width: 100%;
     height: 580px;
+    display: flex;
+    justify-content: center;  /* center vertically too */
+    overflow: hidden;     /* hide anything outside 580px */
 }
 
 .hero-video {
+    position: absolute;
+    width: auto;          /* use natural size */
+    height: auto;         /* use natural size */
+    display: block;
+    z-index: 5;
+}
+
+.hero-tag {
+    position: absolute;
+    bottom: 153px;       /* 🔥 exactly what you asked for */
+    z-index: 10;
+    font-size: 53px;
+    font-weight: 600;
+    font-family: "Inter Tight", sans-serif;
+    color: #1d1d1f;
+}
+
+.hero-subtag {
+    position: absolute;
+    bottom: 118px;     /* 🔥 exactly what you asked for */
+    z-index: 10;
+    font-size: 27px;
+    font-weight: 500px;
+    font-family: "Inter Tight", sans-serif;
+    color: #1d1d1f;
+    line-height: 1.14286;
+    letter-spacing: .007em;
+}
+
+.sub-section {
+    position: relative;
     max-width: 100%;
-    padding-top: 56px;
+    height: 580px;
+    display: flex;
+    justify-content: center;  /* center vertically too */
+    overflow: hidden;
+    margin-top: 12px;
+    background-color: #F3F3F5;
+}
+
+.cta {
+    position: absolute;
+    z-index: 5;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    bottom: 57px;
+}
+
+.button-cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 122px;
+    background-color: #0071E3;
+    font-size: 17px;
+    font-family: "Inter Tight", sans-serif;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.sub-section > h2 {
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Inter Tight", sans-serif;
+    color: #1d1d1f;
+    margin-top: 45px;
 }
