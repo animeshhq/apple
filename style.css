@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,7 +31,7 @@ nav {
     height: 43px;
     margin: 0 auto;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     background-color: transparent;
 }
@@ -40,7 +42,7 @@ nav > li {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     margin: 0;
-    color: #4D4D4E;
+    color: #4d4d4e;
     cursor: pointer;
 }
 
@@ -58,7 +60,7 @@ nav > li {
     cursor: pointer;
 }
 
-.cashback{
+.cashback {
     width: 100%;
     height: 45px;
     font-size: 14px;
@@ -68,7 +70,7 @@ nav > li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F5F5F7;
+    background-color: #f5f5f7;
 }
 
 .hero {
@@ -107,18 +109,7 @@ nav > li {
     font-family: "Inter Tight", sans-serif;
     color: #1d1d1f;
     line-height: 1.14286;
-    letter-spacing: .007em;
-}
-
-.sub-section {
-    position: relative;
-    max-width: 100%;
-    height: 580px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 12px;
-    background-color: #F3F3F5;
+    letter-spacing: 0.007em;
 }
 
 .cta {
@@ -136,7 +127,7 @@ nav > li {
     align-items: center;
     height: 44px;
     width: 122px;
-    background-color: #0071E3;
+    background-color: #0071e3;
     font-size: 17px;
     font-family: "Inter Tight", sans-serif;
     color: white;
@@ -144,10 +135,36 @@ nav > li {
     cursor: pointer;
 }
 
+.sub-section {
+    position: relative;
+    max-width: 100%;
+    height: 580px;
+    overflow: hidden;
+    margin-top: 12px;
+    background-color: #f3f3f5;
+    text-align: center; /* centers inline text */
+}
+
 .sub-section > h2 {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 55px;
     font-weight: 600;
     font-family: "Inter Tight", sans-serif;
     color: #1d1d1f;
-    margin-top: 45px;
+}
+
+.sub-subtag {
+    position: absolute;
+    top: 118px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 27px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    color: #1d1d1f;
+    line-height: 1.14286;
 }
