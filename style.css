@@ -142,7 +142,7 @@ nav > li {
     overflow: hidden;
     margin-top: 12px;
     background-color: #f3f3f5;
-    text-align: center; /* centers inline text */
+    text-align: center;
 }
 
 .sub-section > h2 {
@@ -168,3 +168,144 @@ nav > li {
     color: #1d1d1f;
     line-height: 1.14286;
 }
+
+.sub-cta {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 14px;
+    z-index: 5;
+}
+
+
+
+.sub-button-cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    min-width: 130px;
+    padding: 0 22px;
+    font-size: 17px;
+    font-family: "Inter Tight", sans-serif;
+    border-radius: 999px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sub-button-cta.primary {
+    background-color: #0071e3;
+    color: #ffffff;
+}
+
+.sub-button-cta.secondary {
+    background-color: transparent;
+    color: #0071e3;
+    border: 1.5px solid #0071e3;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 16px;
+    }
+
+    nav > li {
+        font-size: 11px;
+    }
+
+    .hero {
+        height: 520px;
+    }
+
+    .hero-tag {
+        font-size: 42px;
+        bottom: 140px;
+    }
+
+    .hero-subtag {
+        font-size: 22px;
+        bottom: 105px;
+    }
+
+    .cta {
+        bottom: 50px;
+    }
+
+    .sub-section {
+        height: 520px;
+    }
+
+    .sub-section > h2 {
+        font-size: 44px;
+    }
+
+    .sub-subtag {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+
+    nav > li {
+        display: none;
+    }
+
+    .logo,
+    .search,
+    .cart {
+        display: block;
+    }
+
+    .hero {
+        height: 480px;
+    }
+
+    .hero-tag {
+        font-size: 34px;
+        bottom: 130px;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .hero-subtag {
+        font-size: 18px;
+        bottom: 95px;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .cta {
+        bottom: 45px;
+    }
+
+    .button-cta {
+        height: 40px;
+        width: 110px;
+        font-size: 15px;
+    }
+
+    .sub-section {
+        height: 480px;
+    }
+
+    .sub-section > h2 {
+        font-size: 36px;
+    }
+
+    .sub-subtag {
+        font-size: 18px;
+        padding: 0 16px;
+        text-align: center;
+    }
+}
+
+
